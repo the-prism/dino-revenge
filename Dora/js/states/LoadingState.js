@@ -1,4 +1,3 @@
-var Phaser = Phaser || {};
 var Platformer = Platformer || {};
 
 Platformer.LoadingState = function () {

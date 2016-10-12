@@ -10,10 +10,11 @@
     "groups": [
         "enemies",
         "goals",
-        "players"
+        "players",
+        "hud"
     ],
     "map": {
         "key": "level_tilemap",
-        "tileset": "map_tiles"
+        "tilesets": ["map_tiles"]
     }
 }

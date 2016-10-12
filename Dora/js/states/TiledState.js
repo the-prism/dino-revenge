@@ -1,9 +1,16 @@
-var Phaser = Phaser || {};
 var Platformer = Platformer || {};
 
 Platformer.TiledState = function () {
     "use strict";
     Phaser.State.call(this);
+
+    this.prefab_classes = {
+        "player": Platformer.Player.prototype.constructor,
+        "ground_enemy": Platformer.Enemy.prototype.constructor,
+        "flying_enemy": Platformer.FlyingEnemy.prototype.constructor,
+        "goal": Platformer.Goal.prototype.constructor,
+        "lives": Platformer.Lives.prototype.constructor
+    };
 };
 
 Platformer.TiledState.prototype = Object.create(Phaser.State.prototype);
@@ -11,25 +18,30 @@ Platformer.TiledState.prototype.constructor = Platformer.TiledState;
 
 Platformer.TiledState.prototype.init = function (level_data) {
     "use strict";
+    var tileset_index;
     this.level_data = level_data;
-    
+
     this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     this.scale.pageAlignHorizontally = true;
     this.scale.pageAlignVertically = true;
-    
+
     // start physics system
     this.game.physics.startSystem(Phaser.Physics.ARCADE);
     this.game.physics.arcade.gravity.y = 1000;
-    
+
     // create map and set tileset
     this.map = this.game.add.tilemap(level_data.map.key);
-    this.map.addTilesetImage(this.map.tilesets[0].name, level_data.map.tileset);
+    tileset_index = 0;
+    this.map.tilesets.forEach(function (tileset) {
+        this.map.addTilesetImage(tileset.name, level_data.map.tilesets[tileset_index]);
+        tileset_index += 1;
+    }, this);
 };
 
 Platformer.TiledState.prototype.create = function () {
     "use strict";
     var group_name, object_layer, collision_tiles;
-    
+
     // create map layers
     this.layers = {};
     this.map.layers.forEach(function (layer) {
@@ -49,47 +61,63 @@ Platformer.TiledState.prototype.create = function () {
     }, this);
     // resize the world to be the size of the current layer
     this.layers[this.map.layer.name].resizeWorld();
-    
+
     // create groups
     this.groups = {};
     this.level_data.groups.forEach(function (group_name) {
         this.groups[group_name] = this.game.add.group();
     }, this);
-    
+
     this.prefabs = {};
-    
+
     for (object_layer in this.map.objects) {
         if (this.map.objects.hasOwnProperty(object_layer)) {
             // create layer objects
             this.map.objects[object_layer].forEach(this.create_object, this);
         }
     }
+
+    this.init_hud();
+
+    this.game.camera.follow(this.prefabs.player);
 };
 
 Platformer.TiledState.prototype.create_object = function (object) {
     "use strict";
-    var position, prefab;
+    var object_y, position, prefab;
     // tiled coordinates starts in the bottom left corner
-    position = {"x": object.x + (this.map.tileHeight / 2), "y": object.y - (this.map.tileHeight / 2)};
+    object_y = (object.gid) ? object.y - (this.map.tileHeight / 2) : object.y + (object.height / 2)
+    position = {"x": object.x + (this.map.tileHeight / 2), "y": object_y};
     // create object according to its type
-    switch (object.type) {
-    case "player":
-        prefab = new Platformer.Player(this, position, object.properties);
-        break;
-    case "ground_enemy":
-        prefab = new Platformer.Enemy(this, position, object.properties);
-        break;
-    case "flying_enemy":
-        prefab = new Platformer.FlyingEnemy(this, position, object.properties);
-        break;
-    case "goal":
-        prefab = new Platformer.Goal(this, position, object.properties);
-        break;
+    if (this.prefab_classes.hasOwnProperty(object.type)) {
+        prefab = new this.prefab_classes[object.type](this, position, object.properties);
     }
     this.prefabs[object.name] = prefab;
 };
 
 Platformer.TiledState.prototype.restart_level = function () {
     "use strict";
-    this.game.state.restart(true, false, this.level_data);
+	// restart the game only if the checkpoint was not reached
+    if (this.prefabs.checkpoint && this.prefabs.checkpoint.checkpoint_reached) {
+        this.prefabs.player.x = this.prefabs.checkpoint.x;
+        this.prefabs.player.y = this.prefabs.checkpoint.y;
+    } else {
+        localStorage.player_lives = this.prefabs.player.lives;
+        this.game.state.restart(true, false, this.level_data);
+    }
+};
+
+Platformer.TiledState.prototype.game_over = function () {
+    "use strict";
+    localStorage.clear();
+    this.game.state.start("BootState", true, false, "assets/levels/level1.json");
+};
+
+Platformer.TiledState.prototype.init_hud = function () {
+    "use strict";
+    var lives_position, lives;
+
+    lives_position = new Phaser.Point(this.game.world.width * 0.65, 20);
+    lives = new Platformer.Lives(this, lives_position, {"texture": "player_spritesheet", "group": "hud", "frame": 3, "spacing": 16});
+    this.prefabs["lives"] = lives;
 };
