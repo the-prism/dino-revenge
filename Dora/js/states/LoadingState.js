@@ -11,6 +11,7 @@ Platformer.prototype.constructor = Platformer.LoadingState;
 Platformer.LoadingState.prototype.init = function (level_data) {
     "use strict";
     this.level_data = level_data;
+    localStorage.clear();
 };
 
 Platformer.LoadingState.prototype.preload = function () {
@@ -37,5 +38,5 @@ Platformer.LoadingState.prototype.preload = function () {
 
 Platformer.LoadingState.prototype.create = function () {
     "use strict";
-    this.game.state.start("GameState", true, false, this.level_data);
+    this.game.state.start("StartMenuState", true, false, this.level_data);
 };
