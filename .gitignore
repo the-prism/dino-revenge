@@ -1,0 +1,5 @@
+# Grunt config files + folder #
+###############################
+
+node_modules
+Gruntfile.js
