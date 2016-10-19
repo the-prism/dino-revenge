@@ -60,6 +60,22 @@ Platformer.Player.prototype.update = function () {
     if (this.bottom >= this.game_state.game.world.height) {
         this.die();
     }
+
+    if(!CapsLock.isOn()){
+        if (this.cursors.left.isDown || this.cursors.right.isDown || this.cursors.down.isDown || !this.body.touching.down)
+        {
+            game.time.slowMotion = (Math.random() * 10) % 5;
+            game.time.desiredFps = 30;
+        }
+        else
+        {
+            game.time.slowMotion = 1.0;
+            game.time.desiredFps = 60;
+        }
+    } else {
+        game.time.slowMotion = 1.0;
+        game.time.desiredFps = 60;
+    }
 };
 
 Platformer.Player.prototype.hit_enemy = function (player, enemy) {
