@@ -28,7 +28,7 @@ Platformer.StartMenuState.prototype.create = function () {
 };
 
 Platformer.StartMenuState.prototype.actionOnClick = function () {
-
+    this.game.state.start("GameState", true, false, this.level_data);
 };
 
 Platformer.StartMenuState.prototype.up = function () {
