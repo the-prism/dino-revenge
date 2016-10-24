@@ -120,6 +120,6 @@ Platformer.TiledState.prototype.init_hud = function () {
     var lives_position, lives;
 
     lives_position = new Phaser.Point(this.game.world.width * 0.65, 20);
-    lives = new Platformer.Lives(this, lives_position, {"texture": "player_spritesheet", "group": "hud", "frame": 3, "spacing": 16});
+    lives = new Platformer.Lives(this, lives_position, {"texture": "heart", "group": "hud", "frame": 3, "spacing": 16});
     this.prefabs["lives"] = lives;
 };

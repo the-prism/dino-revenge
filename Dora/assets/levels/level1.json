@@ -1,11 +1,12 @@
 {
     "assets": {
-        "map_tiles": { "type": "image", "source": "assets/images/tiles_spritesheet.png" },
+        "map_tiles": { "type": "image", "source": "assets/images/tiles.png" },
         "player_spritesheet": { "type": "spritesheet", "source": "assets/images/dino.png", "frame_width": 64, "frame_height": 64, "frames": 5, "margin": 1, "spacing": 1 },
         "slime_image": { "type": "image", "source": "assets/images/slime.png" },
         "fly_spritesheet": { "type": "spritesheet", "source": "assets/images/fly_spritesheet.png", "frame_width": 37, "frame_height": 20, "frames": 2 },
         "goal_image": { "type": "image", "source": "assets/images/goal.png" },
-        "level_tilemap": { "type": "tilemap", "source": "assets/maps/level1_map.json" }
+        "level_tilemap": { "type": "tilemap", "source": "assets/maps/level1_map.json" },
+        "heart": { "type": "image", "source": "assets/images/heart.png" }
     },
     "groups": [
         "enemies",
