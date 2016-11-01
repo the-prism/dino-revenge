@@ -7,7 +7,6 @@ Platformer.Player = function (game_state, position, properties) {
     this.walking_speed = +properties.walking_speed;
     this.jumping_speed = +properties.jumping_speed;
     this.bouncing = +properties.bouncing;
-    this.score = +localStorage.player_score || 0;
     this.lives = +localStorage.player_lives || +properties.lives;
 
     this.game_state.game.physics.arcade.enable(this);
