@@ -6,7 +6,8 @@
         "fly_spritesheet": { "type": "spritesheet", "source": "assets/images/fly_spritesheet.png", "frame_width": 37, "frame_height": 20, "frames": 2 },
         "goal_image": { "type": "image", "source": "assets/images/goal.png" },
         "level_tilemap": { "type": "tilemap", "source": "assets/maps/level1_map.json" },
-        "heart": { "type": "image", "source": "assets/images/heart.png" }
+        "heart": { "type": "image", "source": "assets/images/heart.png" },
+        "platform_tiles": { "type": "image", "source": "assets/images/platform_sprites.png" }
     },
     "groups": [
         "enemies",
@@ -16,6 +17,6 @@
     ],
     "map": {
         "key": "level_tilemap",
-        "tilesets": ["map_tiles"]
+        "tilesets": ["map_tiles", "platform_tiles"]
     }
 }
