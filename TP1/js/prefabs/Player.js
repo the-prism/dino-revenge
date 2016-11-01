@@ -14,9 +14,10 @@ Platformer.Player = function (game_state, position, properties) {
 
     this.direction = "RIGHT";
 
-    this.animations.add("walking", [0, 1, 2, 1], 6, true);
+    this.animations.add("walking", [1, 2, 3, 4], 6, true);
+    this.animations.add("jump", [0], 6, true);
 
-    this.frame = 3;
+    this.frame = 5;
 
     this.anchor.setTo(0.5);
 
@@ -53,6 +54,7 @@ Platformer.Player.prototype.update = function () {
     // jump only if touching a tile
     if (this.cursors.up.isDown && this.body.blocked.down) {
         this.body.velocity.y = -this.jumping_speed;
+        this.animations.play("jump");
     }
 
     // dies if touches the end of the screen
