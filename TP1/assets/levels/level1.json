@@ -7,7 +7,8 @@
         "goal_image": { "type": "image", "source": "assets/images/goal.png" },
         "level_tilemap": { "type": "tilemap", "source": "assets/maps/level1_map.json" },
         "heart": { "type": "image", "source": "assets/images/heart.png" },
-        "platform_tiles": { "type": "image", "source": "assets/images/platform_sprites.png" }
+        "platform_tiles": { "type": "image", "source": "assets/images/platform_sprites.png" },
+        "wallpaper_tiles": { "type": "image", "source": "assets/images/wallpaper.jpg" }
     },
     "groups": [
         "enemies",
@@ -17,6 +18,6 @@
     ],
     "map": {
         "key": "level_tilemap",
-        "tilesets": ["map_tiles", "platform_tiles"]
+        "tilesets": ["map_tiles", "platform_tiles", "wallpaper_tiles"]
     }
 }
