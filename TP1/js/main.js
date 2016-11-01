@@ -1,3 +1,5 @@
+// This game has been inspired by an online tutorial at : https://gamedevacademy.org/platformer-tutorial-with-phaser-and-tiled/
+
 var Phaser = Phaser || {};
 var Platformer = Platformer || {};
 
