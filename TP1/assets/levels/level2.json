@@ -19,5 +19,6 @@
     "map": {
         "key": "level_tilemap",
         "tilesets": ["map_tiles", "platform_tiles", "wallpaper_tiles"]
-    }
+    },
+    "name": "level2"
 }
