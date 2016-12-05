@@ -7,8 +7,10 @@ public class DestroyCubeController : MonoBehaviour {
 	{
 		if (Input.GetKey ("space")) 
 		{
-			Instantiate(remains, transform.position, transform.rotation);
+			GameObject t = (GameObject)Instantiate(remains, transform.position, transform.rotation);
 			Destroy(gameObject);
+			new WaitForSeconds(5);
+			Destroy(t,1.0f);
 		}
 	}
 }
