@@ -30,6 +30,10 @@ public class PlayerMovement : MonoBehaviour {
 			v += 1;
 		if (Input.GetKey ("down"))
 			v += -1;
+		if (Input.GetKey ("space")) 
+		{
+			GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+		}
 
 		Move (h, v);
 		Turning ();
