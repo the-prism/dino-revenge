@@ -986,6 +986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+  cube: {fileID: 100742, guid: a59025243573b4b7d86687b203b41179, type: 2}
 --- !u!54 &2025161143
 Rigidbody:
   m_ObjectHideFlags: 0

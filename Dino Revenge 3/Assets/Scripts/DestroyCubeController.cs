@@ -9,8 +9,6 @@ public class DestroyCubeController : MonoBehaviour {
 		{
 			GameObject t = (GameObject)Instantiate(remains, transform.position, transform.rotation);
 			Destroy(gameObject);
-			new WaitForSeconds(5);
-			Destroy(t,1.0f);
 		}
 	}
 }
