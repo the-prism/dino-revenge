@@ -1,0 +1,7 @@
+- Change Destroyable cube texture to match ground's texture(so it is hidden from game view)
+- gameover
+- Score ?
+- Fix multiple bomb bug
+- No more infinite bombs
+- Start menu ?
+- powerups ?

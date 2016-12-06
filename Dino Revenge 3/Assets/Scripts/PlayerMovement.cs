@@ -42,23 +42,23 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		float horizontalAxis = 0;
 		float verticalAxis = 0;
-		if (Input.GetKey ("right")) 
+		if (Input.GetKey ("d")) 
 		{
 			horizontalAxis += 1;
 		}
-		if (Input.GetKey ("left")) 
+		if (Input.GetKey ("a")) 
 		{
 			horizontalAxis += -1;
 		}
-		if (Input.GetKey ("up")) 
+		if (Input.GetKey ("w")) 
 		{
 			verticalAxis += 1;
 		}
-		if (Input.GetKey ("down")) 
+		if (Input.GetKey ("s")) 
 		{
 			verticalAxis += -1;
 		}
-		if (Input.GetKey ("k")) 
+		if (Input.GetKey ("q")) 
 		{
 			float x = transform.position.x;
 			float y = transform.position.y;
