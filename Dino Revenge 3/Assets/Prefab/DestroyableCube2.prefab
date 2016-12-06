@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a590cb3f42e47f6b0588f249851587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  remains: {fileID: 134318, guid: 68d8fd0dcf5b24e58984b0287f3390b9, type: 2}
+  remains: {fileID: 131764, guid: 68d8fd0dcf5b24e58984b0287f3390b9, type: 2}
   playerId: 2
 --- !u!1001 &100100000
 Prefab:
@@ -93,7 +93,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: remains
+      value: 
+      objectReference: {fileID: 131764, guid: 68d8fd0dcf5b24e58984b0287f3390b9, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 133484}
