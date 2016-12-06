@@ -4,41 +4,83 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
 	public float speed = 6f;
+	public GameObject cube;
 
 	Vector3 movement;
 	Animator anim;
 	Rigidbody playerRigidBody;
-	int floorMask;
-	float camRayLength = 100f;
+	float TurnInputValue;
+	float TurnSpeed = 180f;
+	string TurnAxisName;
+	GameObject t;
+
+
+	void OnEnable()
+	{
+		//TurnInputValue = 0f;
+		//playerRigidBody.isKinematic = false;
+	}
+
+	private void OnDisable ()
+	{
+		// When the tank is turned off, set it to kinematic so it stops moving.
+		//playerRigidBody.isKinematic = true;
+	}
 
 	void Awake()
 	{
-		floorMask = LayerMask.GetMask ("Floor");
 		anim = GetComponent<Animator> ();
 		playerRigidBody = GetComponent<Rigidbody> ();
 	}
 
-	void FixedUpdate()
+	void Start()
 	{
-		float h = 0;
-		float v = 0;
-		if (Input.GetKey ("right"))
-			h += 1;
-		if (Input.GetKey ("left"))
-			h += -1;
-		if (Input.GetKey ("up"))
-			v += 1;
-		if (Input.GetKey ("down"))
-			v += -1;
-		if (Input.GetKey ("space")) 
+		TurnAxisName = "Horizontal";
+	}
+
+	void Update()
+	{
+		float horizontalAxis = 0;
+		float verticalAxis = 0;
+		if (Input.GetKey ("right")) 
 		{
-			GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+			horizontalAxis += 1;
+		}
+		if (Input.GetKey ("left")) 
+		{
+			horizontalAxis += -1;
+		}
+		if (Input.GetKey ("up")) 
+		{
+			verticalAxis += 1;
+		}
+		if (Input.GetKey ("down")) 
+		{
+			verticalAxis += -1;
+		}
+		if (Input.GetKey ("k")) 
+		{
+			float x = transform.position.x;
+			float y = transform.position.y;
+			float z = transform.position.z;
+			t = (GameObject)Instantiate(cube,new Vector3(x,-0.5f,z), transform.rotation);
 		}
 
-		Move (h, v);
-		Turning ();
+		//TurnInputValue = Input.GetAxis (TurnAxisName);
+		/*if (Input.GetKey ("space")) 
+		{
+			GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+		}*/
+		Move (horizontalAxis, verticalAxis);
+		//Turning ();
 		//Animating (h, v);
 	}
+
+	/*void FixedUpdate()
+	{
+		Move (horizontalAxis,verticalAxis);
+		//Turning ();
+	}*/
 
 	void Move(float h, float v)
 	{
@@ -49,21 +91,17 @@ public class PlayerMovement : MonoBehaviour {
 		playerRigidBody.MovePosition (transform.position + movement);
 	}
 
-	void Turning()
+	/*void Turning()
 	{
-		Ray camRay = Camera.main.ScreenPointToRay (Input.mousePosition);
-
-		RaycastHit floorHit;
-
-		if (Physics.Raycast (camRay, out floorHit, camRayLength, floorMask)) 
-		{
-			Vector3 playerToMouse = floorHit.point - transform.position;
-			playerToMouse.y = 0f;
-
-			Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
-			playerRigidBody.MoveRotation(newRotation);
-		}
-	}
+		// Determine the number of degrees to be turned based on the input, speed and time between frames.
+		float turn = TurnInputValue * TurnSpeed * Time.deltaTime;
+		
+		// Make this into a rotation in the y axis.
+		Quaternion turnRotation = Quaternion.Euler (0f, turn, 0f);
+		
+		// Apply this rotation to the rigidbody's rotation.
+		playerRigidBody.MoveRotation (playerRigidBody.rotation * turnRotation);
+	}*/
 
 	void Animating(float h, float v)
 	{
