@@ -85,6 +85,7 @@ public class PlayerMovement : MonoBehaviour
         Move( horizontalAxis, verticalAxis );
         //Turning ();
         //Animating (h, v);
+        
     }
 
     /*void FixedUpdate()
