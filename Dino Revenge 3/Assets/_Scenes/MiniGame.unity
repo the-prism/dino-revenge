@@ -339,8 +339,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
---- !u!136 &517405646
-CapsuleCollider:
+--- !u!65 &517405646
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -348,10 +348,9 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 20
-  m_Height: 43.9999962
-  m_Direction: 1
-  m_Center: {x: 0, y: -20, z: 4.49999905}
+  serializedVersion: 2
+  m_Size: {x: 4.32999992, y: 4.61999989, z: 1}
+  m_Center: {x: -.610000014, y: 1.38999999, z: 0}
 --- !u!54 &517405647
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -961,19 +960,6 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 9c657c3fbe15246f781ac2e806eba81d, type: 3}
   m_PrefabInternal: {fileID: 1857515969}
---- !u!136 &2025161140
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2025161139}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 20
-  m_Height: 43.9999962
-  m_Direction: 1
-  m_Center: {x: 0, y: -20, z: 4.49999905}
 --- !u!114 &2025161141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,6 +972,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+--- !u!65 &2025161142
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2025161139}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.32999992, y: 4.61999989, z: 1}
+  m_Center: {x: -.610000014, y: 1.38999999, z: 0}
 --- !u!54 &2025161143
 Rigidbody:
   m_ObjectHideFlags: 0
