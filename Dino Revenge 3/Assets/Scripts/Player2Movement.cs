@@ -13,6 +13,7 @@ public class Player2Movement : MonoBehaviour {
 	float TurnSpeed = 180f;
 	string TurnAxisName;
 	GameObject t;
+    bool canPlaceBomb = true;
 	
 	
 	void OnEnable()
@@ -63,15 +64,24 @@ public class Player2Movement : MonoBehaviour {
 			float x = transform.position.x;
 			float y = transform.position.y;
 			float z = transform.position.z;
-			t = (GameObject)Instantiate(cube,new Vector3(x,-0.5f,z), transform.rotation);
+            if ( canPlaceBomb )
+            {
+                canPlaceBomb = false;
+                t = ( GameObject ) Instantiate( cube, new Vector3( x, -0.5f, z ), transform.rotation );
+            }
 		}
-		
-		//TurnInputValue = Input.GetAxis (TurnAxisName);
-		/*if (Input.GetKey ("space")) 
+
+        if ( Input.GetKey( "o" ) )
+        {
+            canPlaceBomb = true;
+        }
+
+        //TurnInputValue = Input.GetAxis (TurnAxisName);
+        /*if (Input.GetKey ("space")) 
 		{
 			GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
 		}*/
-		Move (horizontalAxis, verticalAxis);
+        Move (horizontalAxis, verticalAxis);
 		//Turning ();
 		//Animating (h, v);
 	}
