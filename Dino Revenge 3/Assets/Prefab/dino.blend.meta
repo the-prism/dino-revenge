@@ -37,6 +37,35 @@ ModelImporter:
     100058: Bone_027
     100060: Bone_028
     100062: dino
+    100064: brasDroite
+    100066: brasGauche
+    100068: ColoneBas
+    100070: ColoneCou
+    100072: epauleDroite
+    100074: epauleGauche
+    100076: hancheAvantDroite
+    100078: hancheAvantGauche
+    100080: hancheDoite
+    100082: hancheGauche
+    100084: JambeAvantGauche
+    100086: jambeDroite
+    100088: jambeGauche
+    100090: Machoire
+    100092: mainDroite
+    100094: mainGauche
+    100096: Patte_arriere
+    100098: PatteAvant
+    100100: PatteAvantGauche
+    100102: Pelvis
+    100104: PiedAvantGauche
+    100106: PiedAvantGauche_001
+    100108: piedDroite
+    100110: piedGauche
+    100112: Tail1
+    100114: Tail2
+    100116: Tete
+    100118: TeteCou
+    100120: Torse
     400000: //RootNode
     400002: Armature
     400004: Bone
@@ -69,6 +98,35 @@ ModelImporter:
     400058: Bone_027
     400060: Bone_028
     400062: dino
+    400064: brasDroite
+    400066: brasGauche
+    400068: ColoneBas
+    400070: ColoneCou
+    400072: epauleDroite
+    400074: epauleGauche
+    400076: hancheAvantDroite
+    400078: hancheAvantGauche
+    400080: hancheDoite
+    400082: hancheGauche
+    400084: JambeAvantGauche
+    400086: jambeDroite
+    400088: jambeGauche
+    400090: Machoire
+    400092: mainDroite
+    400094: mainGauche
+    400096: Patte_arriere
+    400098: PatteAvant
+    400100: PatteAvantGauche
+    400102: Pelvis
+    400104: PiedAvantGauche
+    400106: PiedAvantGauche_001
+    400108: piedDroite
+    400110: piedGauche
+    400112: Tail1
+    400114: Tail2
+    400116: Tete
+    400118: TeteCou
+    400120: Torse
     2300000: //RootNode
     3300000: //RootNode
     4300000: Dino
