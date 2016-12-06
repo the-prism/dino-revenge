@@ -585,6 +585,10 @@ Prefab:
       propertyPath: m_Name
       value: dino2
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 9c657c3fbe15246f781ac2e806eba81d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 43ee3af636f70bb4f82cfed4f7ac8cd6, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c657c3fbe15246f781ac2e806eba81d, type: 3}
   m_IsPrefabParent: 0
