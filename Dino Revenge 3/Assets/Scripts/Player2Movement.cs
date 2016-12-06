@@ -42,19 +42,19 @@ public class Player2Movement : MonoBehaviour {
 	{
 		float horizontalAxis = 0;
 		float verticalAxis = 0;
-		if (Input.GetKey ("l")) 
+		if (Input.GetKey ("j"))
 		{
 			horizontalAxis += 1;
 		}
-		if (Input.GetKey ("j")) 
+		if (Input.GetKey ("l")) 
 		{
 			horizontalAxis += -1;
 		}
-		if (Input.GetKey ("i")) 
+		if (Input.GetKey ("k")) 
 		{
 			verticalAxis += 1;
 		}
-		if (Input.GetKey ("k")) 
+		if (Input.GetKey ("i")) 
 		{
 			verticalAxis += -1;
 		}
