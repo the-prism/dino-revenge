@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class MainMenuController : MonoBehaviour {
-
+	static public int player;
 	public void exit()
 	{
 		// Exit game when played in the editor
