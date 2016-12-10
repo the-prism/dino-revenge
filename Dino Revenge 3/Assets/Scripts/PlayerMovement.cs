@@ -42,6 +42,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+		if(transform.position.y < -50)
+		{
+			Application.LoadLevel(Application.loadedLevel);
+		}
         float horizontalAxis = 0;
         float verticalAxis = 0;
         if ( Input.GetKey( "d" ) )
