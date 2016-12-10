@@ -42,6 +42,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+		if(Input.GetKey("escape"))
+		{
+			UnityEditor.EditorApplication.isPlaying = false;
+			Application.Quit ();
+		}
 		if(transform.position.y < -50)
 		{
 			Application.LoadLevel(Application.loadedLevel);
