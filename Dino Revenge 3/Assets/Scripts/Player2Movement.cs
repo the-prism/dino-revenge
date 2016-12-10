@@ -48,7 +48,8 @@ public class Player2Movement : MonoBehaviour {
 		}
 		if(transform.position.y < -50)
 		{
-			Application.LoadLevel(Application.loadedLevel);
+			MainMenuController.player = 2;
+			Application.LoadLevel("Gameover");
 		}
 		float horizontalAxis = 0;
 		float verticalAxis = 0;
