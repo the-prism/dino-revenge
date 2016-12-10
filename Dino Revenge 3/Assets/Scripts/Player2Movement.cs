@@ -41,6 +41,15 @@ public class Player2Movement : MonoBehaviour {
 	
 	void Update()
 	{
+		if(Input.GetKey("escape"))
+		{
+			UnityEditor.EditorApplication.isPlaying = false;
+			Application.Quit ();
+		}
+		if(transform.position.y < -50)
+		{
+			Application.LoadLevel(Application.loadedLevel);
+		}
 		float horizontalAxis = 0;
 		float verticalAxis = 0;
 		if (Input.GetKey ("j"))
