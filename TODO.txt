@@ -1,7 +1,7 @@
 - Change Destroyable cube texture to match ground's texture(so it is hidden from game view)
-- gameover
-- Score ?
-- Fix multiple bomb bug
-- No more infinite bombs
-- Start menu ?
-- powerups ?
+- button on gameover screen
+- update gameover condition
+- dino texture
+- check if player 1 screen is at the top
+- delay on bombs
+- lives option
