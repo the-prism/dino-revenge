@@ -1,7 +1,6 @@
 - Change Destroyable cube texture to match ground's texture(so it is hidden from game view)
-- button on gameover screen
-- update gameover condition
 - dino texture
-- check if player 1 screen is at the top
 - delay on bombs
 - lives option
+- bigger explosions
+- more bombs ?
