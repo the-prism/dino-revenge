@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
 			UnityEditor.EditorApplication.isPlaying = false;
 			Application.Quit ();
 		}
-		if(transform.position.y < -50)
+		if(transform.position.y < -50 || transform.position.x > 500 || transform.position.z > 500)
 		{
 			MainMenuController.player = 2;
 			Application.LoadLevel("Gameover");
