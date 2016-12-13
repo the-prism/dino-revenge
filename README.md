@@ -1,30 +1,16 @@
-# dino-revenge
-Projet de Session 5071 - Infographie
+# Dino Revenge 3
 
-Jeu de type platformer en 2d ayant comme thème le dinosaure de Chrome
 
-# Instructions
+# Assets
 
-Pour exécuter le jeu, il faut céer un serveur web local pour pouvoir charger les fichiers javascripts.
+## Texture d'écailles
+Scales - Texture
+by Dadstock [http://www.deviantart.com/art/Scales-Texture-82102562](http://www.deviantart.com/art/Scales-Texture-82102562)
 
-Le dossier `dino-revenge` contiens les fichiers qui doivent se trouver à la racine du site ou dossier.
+## Gazon
+Grassy Texture 01
+by CyclicalConundrum [http://www.deviantart.com/art/Grassy-Texture-01-15134647](http://www.deviantart.com/art/Grassy-Texture-01-15134647)
 
-On accède ensuite au jeu en tappant l'adresse `http://localhost:noDePort`.
-
-Le fichier `index.html` contient lee jeu.
-
-## Concept
-Faire un jeu où le simple fait de réussir un niveau deviens pénible du fait que le jeu crée du lag, modifie constamment ta vitesse et autres attributs.
-Contrairement aux jeux modernes, notre jeu a encore des cheat codes sans micro transaction.
-
-## Jeux similaires
-On peut tout de suite penser à des jeux qui pousse nos limites et notre patience comme :
-- Super Meat Boy
-- I Wanna Be the Guy
-- The Unfair Platformer
-
-## Outils utilisés
-* Phaser
-* Tiled
-* Gimp
-* Blender
+## Skybox
+Purple Space Nebula Skybox
+by TL Multimedia [https://www.assetstore.unity3d.com/en/#!/content/25117](https://www.assetstore.unity3d.com/en/#!/content/25117)
