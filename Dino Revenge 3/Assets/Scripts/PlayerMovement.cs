@@ -42,34 +42,58 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-		if(Input.GetKey("escape"))
-		{
-			UnityEditor.EditorApplication.isPlaying = false;
-			Application.Quit ();
-		}
-		if(transform.position.y < -50 || transform.position.x > 500 || transform.position.z > 500)
-		{
-			MainMenuController.player = 2;
-			Application.LoadLevel("Gameover");
-		}
+        if ( Input.GetKey( "escape" ) )
+        {
+            UnityEditor.EditorApplication.isPlaying = false;
+            Application.Quit();
+        }
+        if ( transform.position.y < -50 || transform.position.x > 500 || transform.position.z > 500 )
+        {
+            MainMenuController.player = 2;
+            Application.LoadLevel( "Gameover" );
+        }
         float horizontalAxis = 0;
         float verticalAxis = 0;
         if ( Input.GetKey( "d" ) )
         {
+            anim.SetBool( "isWalk", true );
             horizontalAxis += 1;
         }
+        else if ( Input.GetKeyUp( "d" ) )
+        {
+            anim.SetBool( "isWalk", false );
+        }
+
         if ( Input.GetKey( "a" ) )
         {
+            anim.SetBool( "isWalk", true );
             horizontalAxis += -1;
         }
+        else if ( Input.GetKeyUp( "a" ) )
+        {
+            anim.SetBool( "isWalk", false );
+        }
+
         if ( Input.GetKey( "w" ) )
         {
+            anim.SetBool( "isWalk", true );
             verticalAxis += 1;
         }
+        else if ( Input.GetKeyUp( "w" ) )
+        {
+            anim.SetBool( "isWalk", false );
+        }
+
         if ( Input.GetKey( "s" ) )
         {
+            anim.SetBool( "isWalk", true );
             verticalAxis += -1;
         }
+        else if ( Input.GetKeyUp( "s" ) )
+        {
+            anim.SetBool( "isWalk", false );
+        }
+
         if ( Input.GetKey( "q" ) )
         {
             float x = transform.position.x;
@@ -77,14 +101,24 @@ public class PlayerMovement : MonoBehaviour
             float z = transform.position.z;
             if ( canPlaceBomb )
             {
+                anim.SetBool( "attack", true );
                 canPlaceBomb = false;
                 t = ( GameObject ) Instantiate( cube, new Vector3( x, -0.5f, z ), transform.rotation );
             }
         }
+        else if ( Input.GetKeyUp( "q" ) )
+        {
+            anim.SetBool( "attack", false );
+        }
 
         if ( Input.GetKey( "e" ) )
         {
+            anim.SetBool( "attack", true );
             canPlaceBomb = true;
+        }
+        else if ( Input.GetKeyUp( "e" ) )
+        {
+            anim.SetBool( "attack", false );
         }
 
         //TurnInputValue = Input.GetAxis (TurnAxisName);
@@ -95,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
         Move( horizontalAxis, verticalAxis );
         //Turning ();
         //Animating (h, v);
-        
+
     }
 
     /*void FixedUpdate()
