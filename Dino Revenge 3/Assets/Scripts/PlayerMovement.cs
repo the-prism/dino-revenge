@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
@@ -6,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
 
     public float speed = 6f;
     public GameObject cube;
-
     Vector3 movement;
     Animator anim;
     Rigidbody playerRigidBody;

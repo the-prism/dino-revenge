@@ -9,5 +9,10 @@ public class GameoverController : MonoBehaviour {
 	{
 		gameoverText = GetComponent<Text> ();
 		gameoverText.text = "Player " + MainMenuController.player + " won !";
+		if (MainMenuController.player == 1) {
+			MainMenuController.score1 = MainMenuController.score1 + 1;
+		} else {
+			MainMenuController.score2 = MainMenuController.score2 + 1;
+		}
 	}
 }
