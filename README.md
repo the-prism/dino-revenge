@@ -1,5 +1,13 @@
 # Dino Revenge 3
+Réalisé par Maxime Des Lauriers et Thomas Castonguay-Gagnon
 
+Le projet doit être ouvert dans unity pour l'éxécuter/build
+ou bien éxécuter à l'aide du build dans le dossier release du projet
+
+Le jeu consiste en un remade du classic bomberman mais avec des dinosaures et en 3d
+(Fait dans le cadre du cours d'infographie à l'uqam)
+
+* Réalisé à l'aide de unity 5.1.0
 
 # Assets
 
