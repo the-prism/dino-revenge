@@ -15,4 +15,13 @@ public class GameoverController : MonoBehaviour {
 			MainMenuController.score2 = MainMenuController.score2 + 1;
 		}
 	}
+
+    void Update()
+    {
+        if ( Input.GetKey( "escape" ) )
+        {
+            //UnityEditor.EditorApplication.isPlaying = false;
+            Application.Quit();
+        }
+    }
 }

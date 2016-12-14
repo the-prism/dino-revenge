@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
 		m_TurnInputValue = Input.GetAxis (m_TurnAxisName);
         if ( Input.GetKey( "escape" ) )
         {
-            UnityEditor.EditorApplication.isPlaying = false;
+            //UnityEditor.EditorApplication.isPlaying = false;
             Application.Quit();
         }
         if ( transform.position.y < -50 || transform.position.x > 500 || transform.position.z > 500 )
