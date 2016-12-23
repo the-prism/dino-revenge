@@ -1,0 +1,562 @@
+fileFormatVersion: 2
+guid: 9c657c3fbe15246f781ac2e806eba81d
+timeCreated: 1480788490
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Armature
+    100004: Bone
+    100006: Bone_001
+    100008: Bone_002
+    100010: Bone_003
+    100012: Bone_004
+    100014: Bone_005
+    100016: Bone_006
+    100018: Bone_007
+    100020: Bone_008
+    100022: Bone_009
+    100024: Bone_010
+    100026: Bone_011
+    100028: Bone_012
+    100030: Bone_013
+    100032: Bone_014
+    100034: Bone_015
+    100036: Bone_016
+    100038: Bone_017
+    100040: Bone_018
+    100042: Bone_019
+    100044: Bone_020
+    100046: Bone_021
+    100048: Bone_022
+    100050: Bone_023
+    100052: Bone_024
+    100054: Bone_025
+    100056: Bone_026
+    100058: Bone_027
+    100060: Bone_028
+    100062: dino
+    100064: brasDroite
+    100066: brasGauche
+    100068: ColoneBas
+    100070: ColoneCou
+    100072: epauleDroite
+    100074: epauleGauche
+    100076: hancheAvantDroite
+    100078: hancheAvantGauche
+    100080: hancheDoite
+    100082: hancheGauche
+    100084: JambeAvantGauche
+    100086: jambeDroite
+    100088: jambeGauche
+    100090: Machoire
+    100092: mainDroite
+    100094: mainGauche
+    100096: Patte_arriere
+    100098: PatteAvant
+    100100: PatteAvantGauche
+    100102: Pelvis
+    100104: PiedAvantGauche
+    100106: PiedAvantGauche_001
+    100108: piedDroite
+    100110: piedGauche
+    100112: Tail1
+    100114: Tail2
+    100116: Tete
+    100118: TeteCou
+    100120: Torse
+    400000: //RootNode
+    400002: Armature
+    400004: Bone
+    400006: Bone_001
+    400008: Bone_002
+    400010: Bone_003
+    400012: Bone_004
+    400014: Bone_005
+    400016: Bone_006
+    400018: Bone_007
+    400020: Bone_008
+    400022: Bone_009
+    400024: Bone_010
+    400026: Bone_011
+    400028: Bone_012
+    400030: Bone_013
+    400032: Bone_014
+    400034: Bone_015
+    400036: Bone_016
+    400038: Bone_017
+    400040: Bone_018
+    400042: Bone_019
+    400044: Bone_020
+    400046: Bone_021
+    400048: Bone_022
+    400050: Bone_023
+    400052: Bone_024
+    400054: Bone_025
+    400056: Bone_026
+    400058: Bone_027
+    400060: Bone_028
+    400062: dino
+    400064: brasDroite
+    400066: brasGauche
+    400068: ColoneBas
+    400070: ColoneCou
+    400072: epauleDroite
+    400074: epauleGauche
+    400076: hancheAvantDroite
+    400078: hancheAvantGauche
+    400080: hancheDoite
+    400082: hancheGauche
+    400084: JambeAvantGauche
+    400086: jambeDroite
+    400088: jambeGauche
+    400090: Machoire
+    400092: mainDroite
+    400094: mainGauche
+    400096: Patte_arriere
+    400098: PatteAvant
+    400100: PatteAvantGauche
+    400102: Pelvis
+    400104: PiedAvantGauche
+    400106: PiedAvantGauche_001
+    400108: piedDroite
+    400110: piedGauche
+    400112: Tail1
+    400114: Tail2
+    400116: Tete
+    400118: TeteCou
+    400120: Torse
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Dino
+    4300002: dino
+    7400000: Idle
+    7400002: Walk
+    7400004: Default Take
+    7400006: Walk
+    7400008: Dash
+    9500000: //RootNode
+    13700000: dino
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Patte_arriere
+        weight: 1
+      - path: Armature/Patte_arriere/hancheDoite
+        weight: 1
+      - path: Armature/Patte_arriere/hancheDoite/jambeDroite
+        weight: 1
+      - path: Armature/Patte_arriere/hancheDoite/jambeDroite/piedDroite
+        weight: 1
+      - path: Armature/Patte_arriere/hancheGauche
+        weight: 1
+      - path: Armature/Patte_arriere/hancheGauche/jambeGauche
+        weight: 1
+      - path: Armature/Patte_arriere/hancheGauche/jambeGauche/piedGauche
+        weight: 1
+      - path: Armature/Pelvis
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou/Machoire
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou/TeteCou
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou/TeteCou/Tete
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleDroite
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleDroite/brasDroite
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleDroite/brasDroite/mainDroite
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleGauche
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleGauche/brasGauche
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleGauche/brasGauche/mainGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantDroite
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantDroite/PatteAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantDroite/PatteAvantGauche/PiedAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantGauche/JambeAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantGauche/JambeAvantGauche/PiedAvantGauche_001
+        weight: 1
+      - path: Armature/Tail1
+        weight: 1
+      - path: Armature/Tail1/Tail2
+        weight: 1
+      - path: dino
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Patte_arriere
+        weight: 1
+      - path: Armature/Patte_arriere/hancheDoite
+        weight: 1
+      - path: Armature/Patte_arriere/hancheDoite/jambeDroite
+        weight: 1
+      - path: Armature/Patte_arriere/hancheDoite/jambeDroite/piedDroite
+        weight: 1
+      - path: Armature/Patte_arriere/hancheGauche
+        weight: 1
+      - path: Armature/Patte_arriere/hancheGauche/jambeGauche
+        weight: 1
+      - path: Armature/Patte_arriere/hancheGauche/jambeGauche/piedGauche
+        weight: 1
+      - path: Armature/Pelvis
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou/Machoire
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou/TeteCou
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou/TeteCou/Tete
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleDroite
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleDroite/brasDroite
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleDroite/brasDroite/mainDroite
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleGauche
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleGauche/brasGauche
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleGauche/brasGauche/mainGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantDroite
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantDroite/PatteAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantDroite/PatteAvantGauche/PiedAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantGauche/JambeAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantGauche/JambeAvantGauche/PiedAvantGauche_001
+        weight: 1
+      - path: Armature/Tail1
+        weight: 1
+      - path: Armature/Tail1/Tail2
+        weight: 1
+      - path: dino
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk
+      takeName: Default Take
+      firstFrame: 60
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Patte_arriere
+        weight: 1
+      - path: Armature/Patte_arriere/hancheDoite
+        weight: 1
+      - path: Armature/Patte_arriere/hancheDoite/jambeDroite
+        weight: 1
+      - path: Armature/Patte_arriere/hancheDoite/jambeDroite/piedDroite
+        weight: 1
+      - path: Armature/Patte_arriere/hancheGauche
+        weight: 1
+      - path: Armature/Patte_arriere/hancheGauche/jambeGauche
+        weight: 1
+      - path: Armature/Patte_arriere/hancheGauche/jambeGauche/piedGauche
+        weight: 1
+      - path: Armature/Pelvis
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou/Machoire
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou/TeteCou
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou/TeteCou/Tete
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleDroite
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleDroite/brasDroite
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleDroite/brasDroite/mainDroite
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleGauche
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleGauche/brasGauche
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleGauche/brasGauche/mainGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantDroite
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantDroite/PatteAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantDroite/PatteAvantGauche/PiedAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantGauche/JambeAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantGauche/JambeAvantGauche/PiedAvantGauche_001
+        weight: 1
+      - path: Armature/Tail1
+        weight: 1
+      - path: Armature/Tail1/Tail2
+        weight: 1
+      - path: dino
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Dash
+      takeName: Default Take
+      firstFrame: 90
+      lastFrame: 110
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Patte_arriere
+        weight: 1
+      - path: Armature/Patte_arriere/hancheDoite
+        weight: 1
+      - path: Armature/Patte_arriere/hancheDoite/jambeDroite
+        weight: 1
+      - path: Armature/Patte_arriere/hancheDoite/jambeDroite/piedDroite
+        weight: 1
+      - path: Armature/Patte_arriere/hancheGauche
+        weight: 1
+      - path: Armature/Patte_arriere/hancheGauche/jambeGauche
+        weight: 1
+      - path: Armature/Patte_arriere/hancheGauche/jambeGauche/piedGauche
+        weight: 1
+      - path: Armature/Pelvis
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou/Machoire
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou/TeteCou
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/ColoneCou/TeteCou/Tete
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleDroite
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleDroite/brasDroite
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleDroite/brasDroite/mainDroite
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleGauche
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleGauche/brasGauche
+        weight: 1
+      - path: Armature/Pelvis/ColoneBas/Torse/epauleGauche/brasGauche/mainGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantDroite
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantDroite/PatteAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantDroite/PatteAvantGauche/PiedAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantGauche/JambeAvantGauche
+        weight: 1
+      - path: Armature/Pelvis/PatteAvant/hancheAvantGauche/JambeAvantGauche/PiedAvantGauche_001
+        weight: 1
+      - path: Armature/Tail1
+        weight: 1
+      - path: Armature/Tail1/Tail2
+        weight: 1
+      - path: dino
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

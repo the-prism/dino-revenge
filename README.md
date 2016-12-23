@@ -1,30 +1,31 @@
-# dino-revenge
-Projet de Session 5071 - Infographie
+# Dino Revenge 3
+Réalisé par Maxime Des Lauriers et Thomas Castonguay-Gagnon
 
-Jeu de type platformer en 2d ayant comme thème le dinosaure de Chrome
+Le projet doit être ouvert dans unity pour l’exécuter/build
+Des version déjà compilées sont disponibles ici : [https://github.com/the-prism/inf5071-projet/releases](https://github.com/the-prism/inf5071-projet/releases)
 
-# Instructions
+Le jeu consiste en un remade du classic bomberman mais avec des dinosaures et en 3d
+(Fait dans le cadre du cours d'infographie à l'uqam)
 
-Pour exécuter le jeu, il faut céer un serveur web local pour pouvoir charger les fichiers javascripts.
+* Réalisé à l'aide de unity 5.1.0
 
-Le dossier `dino-revenge` contiens les fichiers qui doivent se trouver à la racine du site ou dossier.
+## Contrôles
+Pour contrôler le dinausaure 1, les touches `W, A, S, D` permettent de déplacer le dinausaure.
+La touche `Q` permet de placer une bombe, et la touche `E` permet de la faire exploser.
 
-On accède ensuite au jeu en tappant l'adresse `http://localhost:noDePort`.
+Pour le deuxième dinausaure, les touches `I, J, K, L` permettent de déplacer le dinausaure.
+La touche `U` permet de placer une bombe, et la touche `O` permet de la faire exploser.
 
-Le fichier `index.html` contient lee jeu.
+# Assets
 
-## Concept
-Faire un jeu où le simple fait de réussir un niveau deviens pénible du fait que le jeu crée du lag, modifie constamment ta vitesse et autres attributs.
-Contrairement aux jeux modernes, notre jeu a encore des cheat codes sans micro transaction.
+## Texture d'écailles
+Scales - Texture
+by Dadstock [http://www.deviantart.com/art/Scales-Texture-82102562](http://www.deviantart.com/art/Scales-Texture-82102562)
 
-## Jeux similaires
-On peut tout de suite penser à des jeux qui pousse nos limites et notre patience comme :
-- Super Meat Boy
-- I Wanna Be the Guy
-- The Unfair Platformer
+## Gazon
+Grassy Texture 01
+by CyclicalConundrum [http://www.deviantart.com/art/Grassy-Texture-01-15134647](http://www.deviantart.com/art/Grassy-Texture-01-15134647)
 
-## Outils utilisés
-* Phaser
-* Tiled
-* Gimp
-* Blender
+## Skybox
+Purple Space Nebula Skybox
+by TL Multimedia [https://www.assetstore.unity3d.com/en/#!/content/25117](https://www.assetstore.unity3d.com/en/#!/content/25117)
